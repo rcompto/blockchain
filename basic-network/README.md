@@ -1,6 +1,6 @@
 ## Basic Network Config
 
-Note as configuracoes usuadas para os certificados e chaves e
+Note as configuracoes usadas para os certificados e chaves e
 algumas transacoes estao utilizando o channel "foxconn".
 
 Para gerar as chaves e arquivos de criptografia, ``generate.sh``.
