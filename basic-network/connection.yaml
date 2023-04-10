@@ -1,0 +1,33 @@
+---
+name: basic-network
+version: 1.0.0
+client:
+    organization: Org1
+    connection:
+        timeout:
+            peer:
+                endorser: '300'
+            orderer: '300'
+channels:
+    mychannel:
+        orderers:
+        - orderer.foxconn.com.br
+        peers:
+            peer0.org1.foxconn.com.br: {}
+organizations:
+    Org1:
+        mspid: Org1MSP
+        peers:
+        - peer0.org1.foxconn.com.br
+        certificateAuthorities:
+        - ca.foxconn.com.br
+orderers:
+    orderer.foxconn.com.br:
+        url: grpc://orderer:7050
+peers:
+    peer0.org1.foxconn.com.br:
+        url: grpc://peer0:7051
+certificateAuthorities:
+    ca.foxconn.com.br:
+        url: http://ca:7054
+        caName: ca.foxconn.com.br
