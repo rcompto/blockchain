@@ -15,10 +15,10 @@
     "channels": {
         "mychannel": {
             "orderers": [
-                "orderer.example.com"
+                "orderer.foxconn.com.br"
             ],
             "peers": {
-                "peer0.org1.example.com": {}
+                "peer0.org1.foxconn.com.br": {}
             }
         }
     },
@@ -26,27 +26,27 @@
         "Org1": {
             "mspid": "Org1MSP",
             "peers": [
-                "peer0.org1.example.com"
+                "peer0.org1.foxconn.com.br"
             ],
             "certificateAuthorities": [
-                "ca.example.com"
+                "ca.foxconn.com.br"
             ]
         }
     },
     "orderers": {
-        "orderer.example.com": {
-            "url": "grpc://localhost:7050"
+        "orderer.foxconn.com.br": {
+            "url": "grpc://orderer:7050"
         }
     },
     "peers": {
-        "peer0.org1.example.com": {
-            "url": "grpc://localhost:7051"
+        "peer0.org1.foxconn.com.br": {
+            "url": "grpc://peer0:7051"
         }
     },
     "certificateAuthorities": {
-        "ca.example.com": {
-            "url": "http://localhost:7054",
-            "caName": "ca.example.com"
+        "ca.example.com.br": {
+            "url": "http://ca:7054",
+            "caName": "ca.foxconn.com.br"
         }
     }
 }
