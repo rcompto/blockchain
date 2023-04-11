@@ -27,4 +27,4 @@ sudo docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/
 sudo docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.foxconn.com.br/msp" peer0.org1.foxconn.com.br peer channel join -b foxconn.block
 
 #Creating CLI Container
-sudo docker-compose -f ./docker-compose.yml up -d cli
+sudo docker-compose -f docker-compose.yml up -d cli
