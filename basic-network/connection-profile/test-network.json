@@ -1,0 +1,50 @@
+{
+    "name": "basic-network",
+    "version": "1.0.0",
+    "client": {
+	"tlsEnable": true,
+	"adminCredential": {
+		"id": "exploreradmin",
+		"password": "exploreradminpw"
+	},
+	"enableAuthentication": true,
+        "organization": "Org1",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                },
+                "orderer": "300"
+            }
+        }
+    },
+    "channels": {
+        "foxconn": {
+            "peers": {
+                "peer0.org1.foxconn.com.br": {}
+            }
+        }
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "Org1MSP",
+	    "adminPrivateKey": {
+		"path": "/tmp/crypto/peerOrganizations/org1.foxconn.com.br/users/Admin@org1.foxconn.com.br/msp/keystore/cf87d9b93ed59384e3aaa6ab73ff46337bec3d700ec6522d0e06efc6e987d234_sk"
+	    },
+            "peers": [
+                "peer0.org1.foxconn.com.br"
+            ],
+	    "signedCert": {
+		"path": "/tmp/crypto/peerOrganizations/org1.foxconn.com.br/users/User1@org1.foxconn.com.br/msp/signcerts/User1@org1.foxconn.com.br-cert.pem"
+	    }
+        }
+    },
+    "peers": {
+        "peer0.org1.foxconn.com.br": {
+	   "tlsCACerts": {
+		"path": "/tmp/crypto/peerOrganizations/org1.foxconn.com.br/peers/peer0.org1.foxconn.com.br/tls/ca.crt"
+	   },
+	   "url": "grpc://peer0.org1.foxconn.com.br:7051"
+	}
+     }
+}

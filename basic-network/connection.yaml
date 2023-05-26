@@ -9,7 +9,7 @@ client:
                 endorser: '300'
             orderer: '300'
 channels:
-    mychannel:
+    foxconn:
         orderers:
         - orderer.foxconn.com.br
         peers:

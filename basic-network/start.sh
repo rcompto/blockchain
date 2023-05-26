@@ -8,11 +8,11 @@
 set -ev
 
 # don't rewrite paths for Windows Git Bash users
-export MSYS_NO_PATHCONV=1
+#export MSYS_NO_PATHCONV=1
 
 sudo docker-compose -f docker-compose.yml down
 
-sudo docker-compose -f docker-compose.yml up -d ca.foxconn.com.br orderer.foxconn.com.br peer0.org1.foxconn.com.br couchdb
+sudo docker-compose -f docker-compose.yml up -d ca.foxconn.com.br orderer.foxconn.com.br couchdb peer0.org1.foxconn.com.br
 sudo docker ps -a
 
 # wait for Hyperledger Fabric to start

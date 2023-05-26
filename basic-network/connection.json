@@ -13,7 +13,7 @@
         }
     },
     "channels": {
-        "mychannel": {
+        "foxconn": {
             "orderers": [
                 "orderer.foxconn.com.br"
             ],
@@ -35,17 +35,17 @@
     },
     "orderers": {
         "orderer.foxconn.com.br": {
-            "url": "grpc://orderer:7050"
+            "url": "grpc://orderer.foxconn.com.br:7050"
         }
     },
     "peers": {
         "peer0.org1.foxconn.com.br": {
-            "url": "grpc://peer0:7051"
+            "url": "grpc://peer0.org1.foxconn.com.br:7051"
         }
     },
     "certificateAuthorities": {
         "ca.example.com.br": {
-            "url": "http://ca:7054",
+            "url": "http://ca.foxconn.com.br:7054",
             "caName": "ca.foxconn.com.br"
         }
     }
